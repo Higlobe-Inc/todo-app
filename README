@@ -1,0 +1,103 @@
+# To-Do List App
+
+This project is a simple To-Do List application designed to help evaluate your skills in writing Playwright tests for automation. Follow the instructions below to install, run, and test the application on your system.
+
+## Prerequisites
+
+Before you can run this application, ensure the following are installed:
+
+### For Windows
+1. [Node.js (LTS version)](https://nodejs.org/)  
+   - During installation, check the option to install npm.
+   - Restart your computer after installation to ensure everything is set up correctly.
+
+2. [Git](https://git-scm.com/) (optional, if you clone via Git instead of downloading the zip file)
+
+### For Mac
+1. [Homebrew](https://brew.sh/) (package manager for macOS)
+   - Open the terminal and run the following command:
+     ```bash
+     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+     ```
+
+2. Install Node.js and Git via Homebrew:
+   ```bash
+   brew install node git
+   ```
+
+## Getting Started
+
+### Step 1: Clone or Download the Repository
+
+#### Option 1: Clone via Git
+```bash
+git clone <repository_url>
+cd to-do-app
+```
+
+#### Option 2: Download ZIP File
+- Click on the "Code" button in the repository and select "Download ZIP."
+- Extract the zip file and navigate to the extracted folder in your terminal or command prompt.
+
+### Step 2: Install Dependencies
+Run the following command in the project directory to install the necessary dependencies:
+```bash
+npm install
+```
+
+### Step 3: Start the Application
+Run the following command to start the To-Do List app:
+```bash
+npm run dev
+```
+
+The application will start, and you should see a message similar to this:
+```
+VITE vX.X.X  ready in X ms
+  🚀 Local: http://localhost:5173/
+```
+Open the URL (e.g., `http://localhost:5173/`) in your browser to view the application.
+
+## Testing the Application
+
+This project uses Playwright for automation testing. Follow these steps to run the tests:
+
+### Step 1: Install Playwright Browsers
+After installing dependencies, ensure Playwright's required browsers are installed:
+```bash
+npx playwright install
+```
+
+### Step 2: Run the Tests
+To run all tests, execute:
+```bash
+npx playwright test
+```
+
+### Step 3: Debug Tests (Optional)
+To debug the tests, run:
+```bash
+npx playwright test --debug
+```
+This opens the Playwright inspector, allowing you to step through the tests interactively.
+
+## File Structure
+- `public/index.html`: The main HTML file for the application.
+- `src/main.js`: The JavaScript logic for the To-Do app.
+- `tests/todo.spec.js`: Playwright test cases.
+
+## Additional Information
+
+### Troubleshooting
+- If `npm` is not recognized as a command, ensure Node.js is correctly installed and added to your system's PATH.
+- If you encounter port conflicts, stop any application running on port 5173 or specify a new port in the `vite.config.js` file.
+
+### Useful Commands
+- Start the app: `npm run dev`
+- Run all tests: `npx playwright test`
+- Debug tests: `npx playwright test --debug`
+- Install Playwright browsers: `npx playwright install`
+
+### For Questions
+If you have any questions, reach out.
+
